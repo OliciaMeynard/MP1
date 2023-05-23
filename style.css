@@ -42,18 +42,22 @@ REUSABLES
 }
 .section{
     padding: 9.6rem 0;
-    transform: translateX(400%);
+    /* transform: translateX(400%); */
+    transform: translateY(40%);
     transition: all ease 1.2s;
+    opacity: 0;
+    filter: blur(10px) grayscale(1);;
 }
 
-.section:nth-of-type(even){
+/* .section:nth-of-type(even){
     transform: translateX(-400%);
     opacity: 0;
-}
+} */
 
 .section.show{
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
+    filter: blur(0) grayscale(0);;
 }
 
 .section-header{
@@ -91,6 +95,7 @@ header{
     z-index: 100;
     /* background: white; */
     /* box-shadow: 0 4px 4px #00000030; */
+    
 }
 
 .outernav{
