@@ -43,7 +43,7 @@ REUSABLES
 .section{
     padding: 9.6rem 0;
     /* transform: translateX(400%); */
-    transform: translateY(40%);
+    transform: translateY(40%) scale(0.8);
     transition: all ease 1.2s;
     opacity: 0;
     filter: blur(10px) grayscale(1);;
@@ -55,7 +55,7 @@ REUSABLES
 } */
 
 .section.show{
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
     opacity: 1;
     filter: blur(0) grayscale(0);;
 }
@@ -80,6 +80,20 @@ REUSABLES
 
 .grid{
     display: grid;
+}
+
+
+.page-header{
+    font-family: sans-serif;
+    color: var(--main-color);
+    font-size: 7rem;
+    font-weight: 900;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    /* animation-delay: 1s; */
+    backface-visibility: hidden;
+    text-align: center;
 }
 
 
