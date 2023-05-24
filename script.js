@@ -55,3 +55,28 @@ function checkSections(){
     })
 
 }
+
+////////////////////ARROW
+const heroSec = document.querySelector('.section-hero')
+const obs = new IntersectionObserver(
+    function (entries) {
+      const ent = entries[0];
+      // console.log(ent);
+  
+      if (ent.isIntersecting === false) {
+        document.querySelector('.aside-arrow').classList.add('show-arrow');
+        // document.body.classList.add("sticky");
+      }
+      if (ent.isIntersecting === true) {
+        document.querySelector('.aside-arrow').classList.remove('show-arrow');
+        // document.body.classList.remove("sticky");
+      }
+    },
+    {
+      // In the viewport //
+      root: null,
+      threshold: 0,
+      rootMargin: '-144px',
+    }
+  );
+  obs.observe(heroSec);

@@ -1,0 +1,15 @@
+.main{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.accordion-button{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+li{
+    list-style: none;
+    line-height: 1.8;
+    font-size: 1.5rem;
+}

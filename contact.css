@@ -33,16 +33,19 @@
 }
 
 .temp-input, .temp-textarea{
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     border: none;
-    border-bottom: 2px solid #00000042;
-    width: 1005;
+    /* border-bottom: 2px solid #00000042; */
+    width: 100%;
+    background: #ececec;
+    border-radius: 5px;
 }
 
 .btn{
     background: var(--main-color);
     color: white;
     padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 .btn:hover{
     background: white;

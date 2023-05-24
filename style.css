@@ -45,7 +45,7 @@ REUSABLES
     padding: 9.6rem 0;
     transform: translateX(400%);
     /* transform: translateY(40%) scale(0.8); */
-    transition: all ease 1.2s;
+    transition: all ease 1s;
     opacity: 0;
     filter: blur(10px) grayscale(1);;
 }
@@ -101,6 +101,15 @@ REUSABLES
     backface-visibility: hidden;
     text-align: center;
     padding-bottom: 3rem;
+
+    
+}
+
+.about-header{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+    border-bottom: 2rem;
 }
 
 
@@ -589,17 +598,24 @@ SECTION FEATURED
 
 .car-card{
     max-width: 43rem;
-    box-shadow: 0 5px 4px #00000042;
+    box-shadow: 0 5px 4px 3px #00000015;
     padding: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     background: white;
+    overflow: hidden;
+
+}
+
+.car-card:hover .car-card-img{
+    transform: scale(1.1);
 }
 
 .car-card-img{
     width: 30rem;
     height: 25rem;
     object-fit: contain;
+    transition: all 0.5s ease;
 }
 
 .car-card-name{
@@ -872,3 +888,16 @@ SECTION FEATURED
             margin-bottom: 2rem;
           }
           
+
+          .aside-arrow{
+            display: none;
+            animation: moveUpAni 0.5s ease;
+          }
+          
+
+          .aside-arrow.show-arrow{
+            display: block;
+          }
+
+
+

@@ -82,6 +82,19 @@
     
     }
 
+    .nav-link:link, .nav-link:visited{
+        text-decoration: none;
+        color: #5d5d5d;
+        font-size: 1.9rem;
+    }
+
+    .main-nav-list .nav-link-icon-a {
+        background: #1f0040;
+        padding: 1rem 2rem;
+        gap: 1.5rem;
+        color: white;
+    }
+
   }
 
   @media (max-width: 50em) {
