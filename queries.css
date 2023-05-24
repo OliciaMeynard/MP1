@@ -78,7 +78,7 @@
     }
 
     .hero-img{
-        max-width: 60rem;
+        max-width: 70rem;
     
     }
 
@@ -106,8 +106,12 @@
     }
 
     .hero-img{
-        max-width: 50rem;
+        max-width: 60rem;
     
+    }
+
+    .contact-form{
+        margin-bottom: 9rem;
     }
     
     .foot .grid-2-cols{
@@ -141,7 +145,7 @@
     }
 
     .hero-img{
-        max-width: 40rem;
+        max-width: 47rem;
     
     }
     
@@ -163,7 +167,7 @@
         /* but we should not use px */
     
         /* 8px/16px which is 1rem default and em = 16px 0.50% */
-        font-size: 45%;
+        font-size: 50%;
       }
 
       .primary-hero-text{

@@ -274,7 +274,7 @@ HERO
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    animation: carEnter 2s ease 1.5s;
+    animation: carEnter 2s ease 1s;
     animation-fill-mode: backwards;
 }
 
@@ -591,7 +591,9 @@ SECTION FEATURED
 }
 
 .car-card-img{
-    width: 100%;
+    width: 30rem;
+    height: 25rem;
+    object-fit: contain;
 }
 
 .car-card-name{
@@ -630,6 +632,14 @@ SECTION FEATURED
     width: 100%;
     border-radius: 1rem;
     margin-top: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all ease 0.3s;
+}
+.btn-view-details:hover{
+    background-color: white;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
 }
 
 .tab-content{
@@ -731,8 +741,8 @@ SECTION FEATURED
         ************************/
         .aside-arrow{
             position: fixed;
-            bottom: 5rem;
-            right: 3rem;
+            bottom: 2rem;
+            right: 1rem;
             width: 5rem;
             padding: 3rem;
       
@@ -845,7 +855,7 @@ SECTION FEATURED
           .footer-icon-div{
             display: flex;
             gap: 1rem;
-
+            align-items: center;
           }
 
           .icon-footer{
