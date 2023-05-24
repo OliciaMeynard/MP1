@@ -119,6 +119,14 @@
         padding: 3rem;
     }
 
+    .outernav{
+        padding: 0;
+    }
+
+    .form{
+        width: 100%;
+    }
+
 
     
   }
