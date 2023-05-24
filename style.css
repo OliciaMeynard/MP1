@@ -50,6 +50,10 @@ REUSABLES
     filter: blur(10px) grayscale(1);;
 }
 
+.page-section{
+    padding: 5rem 0;
+}
+
 .section:nth-of-type(even){
     transform: translateX(-400%);
     opacity: 0;
@@ -96,6 +100,7 @@ REUSABLES
     /* animation-delay: 1s; */
     backface-visibility: hidden;
     text-align: center;
+    padding-bottom: 3rem;
 }
 
 
