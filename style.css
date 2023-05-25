@@ -603,7 +603,7 @@ SECTION FEATURED
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     background: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -657,6 +657,11 @@ SECTION FEATURED
     cursor: pointer;
     border: 2px solid transparent;
     transition: all ease 0.3s;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
 }
 .btn-view-details:hover{
     background-color: white;

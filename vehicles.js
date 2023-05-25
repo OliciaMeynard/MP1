@@ -43,7 +43,7 @@ const renderAllCars = (container, arr) =>{
             <p>${car.fuel}</p>
             </div>
         </div>
-        <button class="btn-view-details">View Details</button>
+        <a href="singleproductpage.html" class="btn-view-details">View Details</a>
         </div>`
 
 
