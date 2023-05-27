@@ -1,4 +1,4 @@
-"use-strict"
+
 
 
 /*****NAVBAR TOGGLE *****/
@@ -80,3 +80,5 @@ const obs = new IntersectionObserver(
     }
   );
   obs.observe(heroSec);
+
+
