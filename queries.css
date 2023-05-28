@@ -68,13 +68,23 @@
         right: 0;
         top: 3rem;
     }
+    
 
-    .hero-container, .section-hero{
-        height: 70vh;
+    .section-hero{
+        height: 80vh;
+ 
+    }
+    
+    
+    
+    .hero-container{
+   
+        height: 80vh;
     }
 
+
     .img-hero-div{
-        bottom: -9rem;
+        bottom: -15rem;
     }
 
     .hero-img{
@@ -107,6 +117,7 @@
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+    
 
     .section-newsletter{
         padding: 2rem;
@@ -116,6 +127,10 @@
         padding-bottom: 7rem;
         padding-left: 7rem;
         padding-right: 7rem;
+    }
+
+    .img-hero-div{
+        bottom: -10rem;
     }
 
     .hero-img{
@@ -165,22 +180,27 @@
         font-weight: 900;
     }
 
+    
+    .img-hero-div{
+        bottom: -5rem;
+    }
+
     .hero-img{
         max-width: 47rem;
     
     }
     
   }
-
+  
   @media (max-width: 35.25em) {
-    .primary-hero-text{
-        font-size: 11rem;
-   
+      .primary-hero-text{
+          font-size: 11rem;
+          
+        }
     }
-  }
-
-  @media (max-width: 31.25em) {
-
+    
+    @media (max-width: 31.25em) {
+        
       html {
         /* set it minus 1 from 10 to 9 */
         /* font-size: 7px; */
@@ -191,6 +211,21 @@
         font-size: 50%;
       }
 
+      .section-hero{
+          height: 85vh;
+          padding: 0 2rem;
+          width: 100%;
+          padding-bottom: 15rem;
+          position: relative;
+      }
+      
+      
+      
+      .hero-container{
+          background: #1f0040;
+          height: 85vh;
+      }
+      
       .primary-hero-text{
         font-family: herofont;
     
@@ -210,5 +245,5 @@
     .grid-3-cols{
         grid-template-columns: 1fr;
     }
-    
+
 }

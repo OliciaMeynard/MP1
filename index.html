@@ -54,16 +54,35 @@
 
     </header>
 
-    <section class="sectionn section-hero">
-        <div class="img-hero-div">
-            <img class="hero-img" src="./imgs/racecar2.gif" alt="">
+    <section class="sectionn section-hero top">
+        <div class="img-hero-div perspective">
+            <div class="card">
+                <!-- <div class="thumb" style="background-image: url(./imgs/cars-png-image-2.png)"></div> -->
+            <img class="hero-img thumb" src="./imgs/hero.png" alt="">
+        </div>
         </div>
         <div class="containerr hero-container">
 
             <div class="hero-text-div">
-                <h3 class="tertiary-hero-text">
-                    Rent a Luxury and Sports Car
-                </h3>
+    
+
+
+                <div class="rotating-text">
+                    <!-- <p>CSS Animation is</p> -->
+                    <p>
+                      <span class="word w-1">Rent a Luxury and Sports Car</span>
+                      <span class="word w-2">Start your journey in Style</span>
+                      <span class="word w-3">Drive your dreams</span>
+                      <span class="word w-4">Let the journey Begin</span>
+                      
+                    </p>
+                  </div>
+
+
+
+
+
+
                 <h1 class="primary-hero-text">
                     BLAZE
                 </h1>
@@ -313,5 +332,21 @@
 
 </footer>
 
+
+
+<script
+  src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
+
+
+  <script>
+    var o = $(".card");
+     $(".top").on("mousemove", function(t){
+        var e = -($(window).innerWidth()/2 - t.pageX) / 50,
+        n = -($(window).innerHeight()/2 - t.pageY) / 60
+    o.attr("style", "transform: rotateY("+ e +"deg) rotateX(" + n + "deg) ") 
+    })
+  </script>
 </body>
 </html>
