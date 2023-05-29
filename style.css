@@ -114,7 +114,7 @@ REUSABLES
 
 .about-header{
     color: var(--main-color);
-    font-weight: 600;
+    font-weight: 600 !important;
     font-size: 2.4rem;
     border-bottom: 2rem;
 }
@@ -1056,7 +1056,7 @@ SECTION FEATURED
 
         .social-links-icons{
             font-size: 3rem;
-            z-index: 4;
+            z-index: 7;
         }
 
         /********************************

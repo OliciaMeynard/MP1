@@ -46,6 +46,15 @@
     border-bottom: 2rem;
 }
 
+.about-name{
+    color: var(--main-color) !important;
+}
+
+.owl-2-style{
+    text-align: center;
+    padding: 2rem;
+}
+
 @keyframes moveUpAni{
     0%{
         opacity: 0;
