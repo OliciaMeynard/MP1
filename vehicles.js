@@ -1,24 +1,24 @@
 const sportsCarArr = [
-    {name: "Bugatti La Voiture Noire", img: "./imgs/1-sports.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Pagani Zonda HP Barchetta", img: "./imgs/2-sports.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Bugatti Centodieci", img: "./imgs/3-sports.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Bugatti La Voiture Noire", img: "./imgs/4-sports.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Pagani Zonda HP Barchetta", img: "./imgs/5-sports.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Bugatti Centodieci", img: "./imgs/6-sports.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Pagani Zonda HP Barchetta", img: "./imgs/7-sports.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Bugatti Centodieci", img: "./imgs/8-sports.png", year: 2023, milage: "30k", fuel: "diesel"}
+    {name: "La Voiture Noire", img: "./imgs/1-sports.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Bugatti"},
+    {name: "Zonda HP Barchetta", img: "./imgs/2-sports.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Pagani"},
+    {name: "Centodieci", img: "./imgs/3-sports.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Bugatti"},
+    {name: "BugattiLa Voiture Noire", img: "./imgs/4-sports.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Bugatti"},
+    {name: "Zonda HP Barchetta", img: "./imgs/5-sports.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Pagani"},
+    {name: "Bugatti Centodieci", img: "./imgs/6-sports.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Bugatti"},
+    {name: "Pagani Zonda HP Barchetta", img: "./imgs/7-sports.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Pagani"},
+    {name: "Bugatti Centodieci", img: "./imgs/8-sports.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Bugatti"}
 ]
 
 
 const luxCarsArr = [
-    {name: "Rolls-Royce Boat Tail", img: "./imgs/1-lux.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Rolls-Royce Sweptail", img: "./imgs/2-lux.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Mercedes-Maybach Exelero", img: "./imgs/3-lux.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Rolls-Royce Boat Tail", img: "./imgs/4-lux.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Rolls-Royce Sweptail", img: "./imgs/5-lux.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Mercedes-Maybach Exelero", img: "./imgs/6-lux.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Rolls-Royce Sweptail", img: "./imgs/7-lux.png", year: 2023, milage: "30k", fuel: "diesel"},
-    {name: "Mercedes-Maybach Exelero", img: "./imgs/8-lux.png", year: 2023, milage: "30k", fuel: "diesel"}
+    {name: "Boat Tail", img: "./imgs/1-lux.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Rolls-Royce"},
+    {name: "Sweptail", img: "./imgs/2-lux.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Rolls-Royce"},
+    {name: "Maybach Exelero", img: "./imgs/3-lux.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Mercedes"},
+    {name: "Boat Tail", img: "./imgs/4-lux.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Rolls-Royce"},
+    {name: "Sweptail", img: "./imgs/5-lux.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Rolls-Royce"},
+    {name: "Maybach Exelero", img: "./imgs/6-lux.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Mercedes"},
+    {name: "Sweptail", img: "./imgs/7-lux.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Rolls-Royce"},
+    {name: "Maybach Exelero", img: "./imgs/8-lux.png", year: 2023, milage: "30k", fuel: "diesel", brand: "Mercedes"}
 ]
 
 
@@ -31,7 +31,12 @@ const renderAllCars = (container, arr) =>{
         const markup = `<div class="car-card">
         <img src="${car.img}" alt="" class="car-card-img">
         <h2 class="car-card-name">${car.name}</h2>
-        <p class="${car.year}">2023</p>
+
+        <div class="car-card-year-price-div">
+        <p class="car-year-card">${car.year}"</p>
+        <h3 class="car-price">P12000</h3>
+        </div>
+       
         
         <div class="icons-div-card">
            <div class="icon-card-info">
@@ -44,6 +49,8 @@ const renderAllCars = (container, arr) =>{
             </div>
         </div>
         <a href="singleproductpage.html" class="btn-view-details">View Details</a>
+        <div class="car-card-brand-div"><h3>${car.brand}</h3></div>
+
         </div>`
 
 

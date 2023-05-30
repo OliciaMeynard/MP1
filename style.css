@@ -6,6 +6,7 @@
 
 :root{
     --main-color:  #1f0040;
+    --secondary-color:  #4e0085;
     --grey: #383838;
 }
 
@@ -629,10 +630,10 @@ HERO
 .secondary-hero-text:link, .secondary-hero-text:visited {
     font-size: 3rem;
     font-weight: 30;
-    letter-spacing: 2px;
     margin-top: -0.5rem;
     border: none;
     padding: 0.4rem 1rem;
+    /* border-bottom-left-radius: 3rem; */
     border-bottom-left-radius: 3rem;
     font-weight: 600;
     cursor: pointer;
@@ -893,12 +894,13 @@ SECTION FEATURED
 
 .car-card{
     max-width: 43rem;
-    box-shadow: 0 5px 4px 3px #00000015;
+    box-shadow: 0 5px 5px 6px #00000015;
     padding: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     background: white;
     /* overflow: hidden; */
+    position: relative;
 
 }
 
@@ -914,13 +916,28 @@ SECTION FEATURED
 }
 
 .car-card-name{
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.car-card-year-price-div{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .car-card p{
     margin: 1rem 0;
     font-size: 1.6rem;
     width: 3.3rem;
+}
+
+.car-price{
+    font-size: 2.2rem;
+    padding: 0.5rem 2rem;
+    color: var(--main-color);
+    border: solid 2px #17002f6a;
 }
 
 
@@ -940,6 +957,18 @@ SECTION FEATURED
 .icon-card-info .fa-solid{
     color: var(--main-color);
     font-size: 1.8rem;
+}
+
+.car-card-brand-div{
+    background: var(--main-color);
+    color: white;
+    padding: 2rem 3rem;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 23% 100%);
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
 }
 
 .btn-view-details{
@@ -1074,7 +1103,7 @@ SECTION FEATURED
 
         .arrowdiv{
             position: relative;
-    
+            
         }
         .arrow {
             position: absolute;
@@ -1083,7 +1112,7 @@ SECTION FEATURED
             margin-top: -30px;
             margin-left: -60px;
             display: inline-block;
-            font-size: 26px;
+            font-size: 3.3rem;
             color: #ffffff;
             text-align: center;
             width: 50px;
@@ -1099,55 +1128,13 @@ SECTION FEATURED
             text-decoration: none;
             border-radius: 2rem;
           }
-           .arrow.auto {
-            width: 50px;
-            margin-left: -30px;
-            border-radius: 40px;
-            color: rgba(179, 195, 58, 0);
-            transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 1s 0.25 ease-in-out, color 0.25s ease-in-out 0.25s;
-          }
-          .arrow:before, .arrow.auto:before {
-            animation: lineUp 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
-          }
-          .arrow:after, .arrow.auto:after {
-            animation: tipUp 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
-          }
-          .arrow:before {
-            position: absolute;
-            display: inline-block;
-            content: "";
-            background: white;
-            width: 5px;
-            height: 50px;
-            top: 50%;
-            left: 50%;
-            margin-top: -8px;
-            margin-left: -3px;
-            transform: translateY(50px);
-          }
-          .arrow:after {
-            position: absolute;
-            display: inline-block;
-            content: "";
-            width: 20px;
-            height: 20px;
-            color: #ffffff;
-            border-top: 5px solid;
-            border-left: 5px solid;
-            transform: rotateZ(45deg);
-            top: 50%;
-            left: 50%;
-            margin-top: -6px;
-            margin-left: -13px;
-            transform: translateY(50px) rotateZ(45deg);
-          }
-          
-          @keyframes tipUp {
+   
+          @keyframes tipUp2 {
             0% {
-              transform: translateY(50px) rotateZ(45deg);
+              transform: translateY(50px);
             }
             100% {
-              transform: translateY(-70px) rotateZ(45deg);
+              transform: translateY(-70px);
             }
           }
           /* @keyframes lineUp {
@@ -1192,7 +1179,7 @@ SECTION FEATURED
           
 
           .aside-arrow{
-            display: none;
+            /* display: none; */
             animation: moveUpAni 0.5s ease;
           }
           
@@ -1203,7 +1190,8 @@ SECTION FEATURED
 
           .fa-caret-up{
             color: white;
-            opacity: 0;
+            /* opacity: 0; */
+            animation: tipUp2 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
           }
 
 
