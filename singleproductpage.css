@@ -12,10 +12,12 @@
     padding: 2rem;
     overflow-x: hidden;
     /* padding-top: 9rem; */
+    height: 60rem;
+    align-items: center;
 }
 
 .card-car-angles{
-   height: 15rem;
+   height: 20rem;
    border-radius: 1rem;
    cursor: pointer;
    display: flex;
@@ -30,7 +32,7 @@
    gap: 1rem;
    overflow: hidden;
    position: relative;
-
+    
 }
 
 
@@ -52,8 +54,8 @@
 .card-car-angles.active{
     grid-column: 1 / -1;
     grid-row: 1;
-    /* height: auto; */
-    height: 40rem;
+    height: auto;
+    height: 35rem;
     
 }
 
